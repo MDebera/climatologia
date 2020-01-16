@@ -1,0 +1,4 @@
+ - hacer pagina web basica desktop
+ - acomodarla pa que quede prolija
+ - traer clima de la API de weather
+ - hostearla en webhost
