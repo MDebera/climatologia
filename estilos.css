@@ -1,0 +1,39 @@
+* {text-align: center;
+	margin: 0;
+	font-family: arial;
+	}
+
+header {background-color: black;
+		color: white;
+		}
+
+header h5 {font-family: courier;}
+
+.principal {width: 50%;
+			margin: 0 auto;
+			}
+
+p {font-family: courier;
+	text-align: justify;
+	}
+
+button { background-color: #00aaee;
+		color: white;
+		text-transform: uppercase;
+		padding: 15px 32px;
+		font-weight: bold;
+		border-radius: 15px;
+		font: normal bold 1rem sans-serif;
+
+		 }
+
+
+button:hover {
+  background-color: orange; /* Green */
+  color: white;
+}
+
+footer {background-color: orange;
+		border-top: 1px solid black;
+		height:100%;
+		}
