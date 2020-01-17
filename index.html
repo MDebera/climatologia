@@ -1,13 +1,26 @@
-<!-- - hacer pagina web basica desktop sin mucho decoro -->
-<!-- https://mdebera.github.io/climatologia/.-->
-<!-- - Javascrpitear datos de clima desde la web de clima-->
-<!-- - Luego encarar el CSS habiendo visto cusrsos de linkedin -->
+<!-- - hacer pagina web basica desktop sin mucho decoro
+ https://mdebera.github.io/climatologia/.
+
+Javascrpitear datos de clima desde la web de clima
+
+	el request basico seria
+	api.openweathermap.org/data/2.5/weather?q={city name}
+	api.openweathermap.org/data/2.5/weather?q={city name},{country code}
+	api.openweathermap.org/data/2.5/weather?id=2172797 (con city ID, de http://bulk.openweathermap.org/sample/)
+
+	pero y mi API ID?:
+	&APPID=8235b38f0294ec7d0552cf248ab26e15
+
+	http://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15
+
+- Luego encarar el CSS habiendo visto cusrsos de linkedin -->
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title> PAGINA DEL CLIMA VISTES </title>
 	<link rel="stylesheet" href="estilos.css" type="text/css">
+	<script src="js.js"></script>
 </head>
 
 <body>
@@ -25,7 +38,7 @@
 		</p>
 	<!-- mañana es tal fecha y habra tal clima-->
 
-		<h5>Hoy es FECHA y tenemos un DIA </h5> <!-- dar class al H5 y meter datos en inner HTML-->
+		<h5 id="despliegue">`Hoy es FECHA y tenemos un DIA `</h5> <!-- dar class al H5 y meter datos en inner HTML-->
 
 
 		<h5>Manina FECHA va a estar DIA </h5> <!-- dar class al H5 y meter datos en inner HTML-->
