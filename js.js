@@ -2,7 +2,7 @@
 	var fechaHoy = new Date();
 	var clima = document.querySelector('#despliegue');
 	function funcionTraedora() {
-		fetch("http://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15")
+		fetch("https://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15")
 
 		.then( res => res.json())
 		.then( data => { console.log(data.main['temp_min']) // la temp del dia viene en un value temp_min del objeto MAIN del JSOn, en KELVIN, pasar a C...
