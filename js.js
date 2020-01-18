@@ -29,7 +29,7 @@
 
 
 
-/*TEMPERATURA DE MAÑANA EN K*/ REQUIERE DEVELOPER ACCOUNT
+/*TEMPERATURA DE MAÑANA EN K REQUIERE DEVELOPER ACCOUNT
 
 	var climaNext = document.querySelector('#despliegueNext');
 	function funcionTraedora() {
