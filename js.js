@@ -10,7 +10,6 @@
 			clima.innerHTML = `Hoy ${fechaHoy.toLocaleDateString('es-AR', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})} hace como ${celcius} grados.`
 			} // toLocaleDateString formatea la fecha devuelta definiendo parte a parte (weekday, year...) tal el lenguaje predefinido (es-Ar)
 				)
-	}
 
 
 	/*
@@ -29,9 +28,9 @@
 
 
 
-/*TEMPERATURA DE MAÑANA EN K REQUIERE DEVELOPER ACCOUNT
+/*TEMPERATURA DE MAÑANA EN K REQUIERE DEVELOPER ACCOUNT*/
 
-	var climaNext = document.querySelector('#despliegueNext');
+/*	var climaNext = document.querySelector('#despliegueNext');
 	function funcionTraedora() {
 		fetch("http://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15")
 
