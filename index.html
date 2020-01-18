@@ -20,16 +20,24 @@ Javascrpitear datos de clima desde la web de clima
 <head>
 	<title> PAGINA DEL CLIMA VISTES </title>
 	<link rel="stylesheet" href="estilos.css" type="text/css">
-	<!--<script src="js.js"></script>-->
 
+	<!--
 	<script>
-	var clima = document.querySelector('#despliegue');
-	function funcionTraedora() {
-			fetch('http://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15');
-			.then( data => data.text() ); // pasa lo retrieved a texto legibe por JScript
-			.then(despliegue.innerHTML = `${data}`);
-		}
+	
+	 ESTO ANDA, TOMA LA DATA Y LA MANDA A LA CONSLA. EL TRUCO: RREMOVE; AFTER THE FETCH METHOD.
+		function funcionTraedora() {
+			laData = fetch("http://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15")
+			.then( laData => laData.text());
+				//.then( data => data.text() ); // pasa lo retrieved a texto legibe por JScript
+				//.then(despliegue.innerHTML = `${data}`);
+			console.log(laData);
+			alert('opa!');
+
+
 	</script>
+	-->
+
+
 
 </head>
 
@@ -48,15 +56,33 @@ Javascrpitear datos de clima desde la web de clima
 		</p>
 	<!-- mañana es tal fecha y habra tal clima-->
 
-		<h5 id="despliegue">`Hoy es FECHA y tenemos un DIA `</h5> <!-- dar class al H5 y meter datos en inner HTML-->
+		<h5 id="despliegue">ACA DEBE SALIR FECHA Y CLIMA DE HOY</h5> <!-- dar class al H5 y meter datos en inner HTML-->
 
 
-		<h5>Manina FECHA va a estar DIA </h5> <!-- dar class al H5 y meter datos en inner HTML-->
+		<h5 id="despliegueNext">Manina FECHA va a estar DIA </h5> <!-- dar class al H5 y meter datos en inner HTML-->
 		<h5>Queres mas encima, bueno, aca hay pronosticos entrantes:</h5> 
-		<button onclick="funcionTraedora()"> Maniana </button> <!--arrancamo con uno facil: click al boton y sale clima da mañana. Despues calendariamo.-->
+		<button onclick="funcionTraedora();"> Maniana </button> <!--arrancamo con uno facil: click al boton y sale clima da mañana. Despues calendariamo.-->
 
 	<!-- Un calendario para elegir la fecha y ver el pronostico -->
 	</section> 
+
+
+
+<!--	<script>
+		var clima = document.querySelector('#despliegue');
+		function funcionTraedora() {
+				fetch("http://api.openweathermap.org/data/2.5/weather?q=Barcelona&APPID=8235b38f0294ec7d0552cf248ab26e15")
+
+				.then( res => res.json())
+				.then( data => { console.log(data.main['temp_min'])
+								clima.innerHTML = `Hoy hace algo asi como ${data.main['temp_min']} grado masomeno`
+								}
+								)
+				//.then( data => clima.innerHTML = data['coord']['lon']) // en el HTML sale UNDEFINED
+			}
+
+				
+	</script> -->
 
 
 
@@ -67,6 +93,7 @@ Javascrpitear datos de clima desde la web de clima
 		</section>
 	</header>
 
+	<script src="js.js"></script>
 
 
 </body>
